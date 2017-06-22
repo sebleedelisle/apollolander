@@ -142,8 +142,8 @@ function Landscape(){
 		if(view.scale>0.2) { 
 			c.textAlign = 'center';
 			
-			var fontsize = map(view.scale,1,4,10,16,true) /view.scale;
-			c.font = fontsize+'px BenderLight';
+			var fontsize = map(view.scale,1,4,12,20,true) /view.scale;
+			c.font = fontsize+'px HersheySimplex';
 
 			for(var i = 0; i<multiplierlines.length;i++) { 
 				var line = multiplierlines[i]; 

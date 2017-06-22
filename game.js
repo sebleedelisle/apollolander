@@ -100,6 +100,8 @@ function init()
 	
 	KeyTracker.addKeyDownListener(KeyTracker.UP, function() { if(gameState==PLAYING) lander.thrust(1);});
 	KeyTracker.addKeyUpListener(KeyTracker.UP, function() { lander.thrust(0);});
+	KeyTracker.addKeyDownListener(" ", function() { if(gameState==PLAYING) lander.thrust(1);});
+	KeyTracker.addKeyUpListener(" ", function() { lander.thrust(0);});
 	
 	actionRectangle = new Rectangle(0,0,SCREEN_WIDTH, SCREEN_HEIGHT), 
 	smoothedRectangle = new Rectangle(0,0,SCREEN_WIDTH, SCREEN_HEIGHT); 
